@@ -9,7 +9,6 @@ class OAuthController {
   
   @RequestMapping(value: "/social/facebook/")
   String variable(req, Model model) {
-      redirect++;
       return "redirect:/viewable/";
   }
 }

@@ -1,41 +1,18 @@
-### Dart Force Mirrors ###
+### Dart Force Social ###
 
 ![LOGO!](https://raw.github.com/jorishermans/dart-force/master/resources/dart_force_logo.jpg)
 
-Part of the Dart Force Framework.
+Optional part of the Dart Force Framework.
 
 A social library to handle interactions with facebook, google+, twitter, ...
 
 #### Walkthrough ####
 
-This is how you can scrap the metadata info from an object. 
-
-	MetaDataHelper<MetaData> mirrorHelper = new MetaDataHelper<MetaData>();
-  	List<MetaDataValue<MetaData>> mirrorModels = mirrorHelper.getMirrorValues(new Anno());
-  	
-The annotated class.
-
-	class Anno {
-  
-	  @MetaData("test")
-	  void test() {}
-	  
-	}
-
-MetaDataValue has the following fields:
-
-	Symbol memberName;
-  	InstanceMirror instanceMirror;
-  	T object;
-
-Search for classes that implement or extend for example the class Anno.
-
-	ClassSearcher<Anno> searcher = new ClassSearcher<Anno>();
-  	List<Anno> searchResult = searcher.scan();
+It is based upon forcemvc, so you can use this library to extend forcemvc with social login.
 
 ### Notes to Contributors ###
 
-#### Fork Dart Force Mirrors ####
+#### Fork Dart Force Social ####
 
 If you'd like to contribute back to the core, you can [fork this repository](https://help.github.com/articles/fork-a-repo) and send us a pull request, when it is ready.
 
